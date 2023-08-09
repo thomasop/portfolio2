@@ -1,0 +1,321 @@
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-y: auto;
+  will-change: transform;
+  &__sectionHero {
+    justify-content: initial;
+    padding: 0 62px;
+    height: 100vh;
+    &__h1 {
+      &__light {
+        color: black;
+      }
+      &__dark {
+        color: white;
+      }
+    }
+    &__selected {
+      &__light {
+        color: var(--color-highlight) !important;
+      }
+      &__dark {
+        color: white;
+      }
+    }
+    &__p {
+      &__light {
+        color: black;
+      }
+      &__dark {
+        color: white;
+      }
+    }
+  }
+  &__sectionAbout {
+    padding: 0 62px;
+    height: 100vh;
+  }
+  &__skills {
+    padding: 0 62px;
+    height: 100vh;
+  }
+  &__sectionWork {
+    text-align: right;
+    padding: 0 62px;
+    height: 100vh;
+    &__carrousel {
+      &__tilt {
+        width: 300px;
+        height: 300px;
+        float: right;
+        &__img {
+          cursor: pointer;
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+          border-radius: 20px;
+          transition: all 1s;
+
+        animation: identifier 1s;
+          &__light {
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5),
+              -2px -2px 2px rgba(0, 0, 0, 0.5),
+              inset 2px 2px 2px rgba(0, 0, 0, 0.5),
+              inset -2px -2px 2px rgba(0, 0, 0, 0.5),
+              0 0 0 5px rgba(0, 0, 0, 0.5), 0 0 0 2px rgba(0, 0, 0, 0.5);
+
+            &:hover {
+              box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5),
+                -10px -10px 10px rgba(0, 0, 0, 0.5),
+                inset 10px 10px 10px rgba(0, 0, 0, 0.5),
+                inset -10px -10px 10px rgba(0, 0, 0, 0.5),
+                0 0 0 5px rgba(0, 0, 0, 0.5), 0 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+          }
+          &__dark {
+            box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5),
+              -2px -2px 2px rgba(255, 255, 255, 0.5),
+              inset 2px 2px 2px rgba(255, 255, 255, 0.5),
+              inset -2px -2px 2px rgba(255, 255, 255, 0.5),
+              0 0 0 5px rgba(255, 255, 255, 0.5),
+              0 0 0 2px rgba(255, 255, 255, 0.5);
+
+            &:hover {
+              box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.5),
+                -10px -10px 10px rgba(255, 255, 255, 0.5),
+                inset 10px 10px 10px rgba(255, 255, 255, 0.5),
+                inset -10px -10px 10px rgba(255, 255, 255, 0.5),
+                0 0 0 5px rgba(255, 255, 255, 0.5),
+                0 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+          }
+        }
+      }
+    }
+    &__detail {
+      &__div__open {
+        transition: all 1s;
+
+        animation: identifier 1s;
+        cursor: pointer;
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+          border-radius: 20px;
+          &__light {
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5),
+              -2px -2px 2px rgba(0, 0, 0, 0.5),
+              inset 2px 2px 2px rgba(0, 0, 0, 0.5),
+              inset -2px -2px 2px rgba(0, 0, 0, 0.5),
+              0 0 0 5px rgba(0, 0, 0, 0.5), 0 0 0 2px rgba(0, 0, 0, 0.5);
+
+            &:hover {
+              box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5),
+                -10px -10px 10px rgba(0, 0, 0, 0.5),
+                inset 10px 10px 10px rgba(0, 0, 0, 0.5),
+                inset -10px -10px 10px rgba(0, 0, 0, 0.5),
+                0 0 0 5px rgba(0, 0, 0, 0.5), 0 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+          }
+          &__dark {
+            box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5),
+              -2px -2px 2px rgba(255, 255, 255, 0.5),
+              inset 2px 2px 2px rgba(255, 255, 255, 0.5),
+              inset -2px -2px 2px rgba(255, 255, 255, 0.5),
+              0 0 0 5px rgba(255, 255, 255, 0.5),
+              0 0 0 2px rgba(255, 255, 255, 0.5);
+
+            &:hover {
+              box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.5),
+                -10px -10px 10px rgba(255, 255, 255, 0.5),
+                inset 10px 10px 10px rgba(255, 255, 255, 0.5),
+                inset -10px -10px 10px rgba(255, 255, 255, 0.5),
+                0 0 0 5px rgba(255, 255, 255, 0.5),
+                0 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+          }
+        /* transition: all 1s;
+
+        animation: identifier 1s;
+        border-radius: 20px;
+        width: 50%;
+        padding: 10px;
+        background: white;
+        margin: 0px auto;
+        height: 300px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5),
+          -2px -2px 2px rgba(0, 0, 0, 0.5), inset 2px 2px 2px rgba(0, 0, 0, 0.5),
+          inset -2px -2px 2px rgba(0, 0, 0, 0.5), 0 0 0 5px rgba(0, 0, 0, 0.5),
+          0 0 0 2px rgba(0, 0, 0, 0.5); */
+      }
+      &__div__close {
+        transition: all 1s;
+        opacity: 0;
+        animation: identifier2 1s;
+        border-radius: 20px;
+        width: 50%;
+        padding: 10px;
+        background: white;
+        margin: 0px auto;
+        height: 300px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5),
+          -2px -2px 2px rgba(0, 0, 0, 0.5), inset 2px 2px 2px rgba(0, 0, 0, 0.5),
+          inset -2px -2px 2px rgba(0, 0, 0, 0.5), 0 0 0 5px rgba(0, 0, 0, 0.5),
+          0 0 0 2px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  &__sectionContact {
+    text-align: right;
+    padding: 0 62px;
+    height: 100vh;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section p {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.sectionRight {
+  text-align: right;
+  padding: 0 62px;
+  height: 100vh;
+}
+
+header {
+  margin-top: 70px;
+  margin-bottom: 200px;
+  position: relative;
+}
+
+header h1 {
+  font-weight: 600;
+  font-size: 54px;
+  margin: 11px 0;
+}
+
+header sup {
+  display: inline-block;
+  color: var(--color-cta-text);
+  background: var(--color-cta-bg);
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 151.5%;
+  padding: 1px 9px;
+  position: relative;
+  top: -48px;
+  left: -25px;
+}
+
+nav {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+nav a {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    margin-top: 38px;
+    margin-bottom: 200px;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header sup {
+    font-size: 12px;
+    padding: 3px 10px;
+    top: -42px;
+    left: -24px;
+  }
+
+  nav,
+  section p {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .sectionLeft {
+    padding: 0 8vw;
+  }
+
+  .sectionRight {
+    padding: 0 8vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  header sup {
+    font-size: 11px;
+    padding: 2px 8px;
+    top: -35px;
+    left: -18px;
+  }
+
+  nav,
+  section p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@keyframes identifier {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes identifier2 {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
