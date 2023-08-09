@@ -4,13 +4,11 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Tilt from "react-parallax-tilt";
-import { useTransition } from "react-spring";
 import { useSelector } from "react-redux";
 
 export function Overlay({ scroll }) {
   const dispatch = useDispatch();
   const { theme } = useSelector((state) => state.theme);
-  const [scale, setScale] = useState(1.1);
   const arrayPictures = [
     "argentbank.png",
     "billed.png",
@@ -22,7 +20,7 @@ export function Overlay({ scroll }) {
     "sportsee.png",
   ];
   const [index, setIndex] = useState(0);
-  const [type, setType] = useState("js");
+  //const [type, setType] = useState("js");
   const [selected, setSelected] = useState(false);
   console.log(theme);
   return (
@@ -185,7 +183,7 @@ export function Overlay({ scroll }) {
               name=""
               id=""
               onChange={(e) => {
-                setType(e.target.value);
+                //setType(e.target.value);
               }}
             >
               <option>Type de projet</option>
